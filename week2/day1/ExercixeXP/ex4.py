@@ -21,6 +21,7 @@ class Zoo():
     def sorted_animals(self):
         sorted_animals = sorted(self.animals)
         animal_keys=list(map(lambda an:an[0],sorted_animals))
+        print("vvvv")
         print(animal_keys)
         for animal in animal_keys:
             self.sort_animals[animal]=list(filter(lambda an:an[0]==animal ,sorted_animals))
